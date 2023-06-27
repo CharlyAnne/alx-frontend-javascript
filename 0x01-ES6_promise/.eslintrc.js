@@ -1,35 +1,22 @@
 module.exports = {
   env: {
-    browser: false,
+    browser: true,
     es6: true,
-    jest: true,
+    node: true,
   },
-  extends: [
-    'airbnb-base',
-    'plugin:jest/all',
-  ],
+  extends: ['plugin:react/recommended', 'standard'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['jest'],
-  rules: {
-    'no-console': 'off',
-    'no-shadow': 'off',
-    'no-restricted-syntax': [
-      'error',
-      'LabeledStatement',
-      'WithStatement',
-    ],
-  },
-  overrides:[
-    {
-      files: ['*.js'],
-      excludedFiles: 'babel.config.js',
-    }
-  ]
+  plugins: ['react', '@typescript-eslint'],
+  rules: {},
 };
