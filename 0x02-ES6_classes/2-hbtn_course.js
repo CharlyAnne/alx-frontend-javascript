@@ -17,32 +17,32 @@ export default class HolbertonCourse {
   }
 
   //Setters
-  set name(value) {
+  set name(name) {
     if (typeof value !== 'string') {
       throw new Error('Error! Invalid input type');
     }
-    this._name = value;
+    this._name = name;
   }
 
   get length() {
     return this._length;
   }
 
-  set length(value) {
+  set length(length) {
     if (typeof value !== 'number') {
       throw new Error('Error! Invalid input type');
     }
-    this._length = value;
+    this._length = length;
   }
 
   get students() {
     return this._students;
   }
 
-  set students(value) {
+  set students(students) {
     if (!Array.isArray(value)) {
       throw new Error('Error! Invalid input type');
     }
-    this._students = value;
+    this._students = students;
   }
 }
