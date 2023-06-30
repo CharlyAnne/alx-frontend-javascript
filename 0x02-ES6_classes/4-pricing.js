@@ -23,10 +23,8 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this.amount} ${
-      new Currency(this._amount, this._currency.code, this._currency.name)
-        .displayFullCurrency
-    }`;
+    return `${this.amount} ${this._currency.name}
+      (${this._currency.code})`;
   }
 
   static convertPrice(amount, conversionRate) {
