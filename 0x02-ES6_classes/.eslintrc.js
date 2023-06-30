@@ -17,12 +17,8 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-shadow': 'off',
-    'no-underscore-dangle': 'disable',
-    'next-line no-unused-vars': 'disable',
-    /*'no-underscore-dangle': [
-      'error',
-      { allow: ['_name', '_length', 'student'] },
-    ],*/
+    'no-underscore-dangle': 'off',
+    'next-line no-unused-vars': 'off',
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
   },
   overrides: [
