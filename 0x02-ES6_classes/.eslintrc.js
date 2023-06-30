@@ -18,6 +18,8 @@ module.exports = {
     'no-console': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
+    'comma-dangle': ['error', 'never'],
+    'operator-linebreak': ['error', 'before'],
     'next-line no-unused-vars': 'off',
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
   },
