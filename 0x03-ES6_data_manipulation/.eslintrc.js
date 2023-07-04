@@ -22,6 +22,7 @@ module.exports = {
     'operator-linebreak': ['error', 'before'],
     'next-line no-unused-vars': 'off',
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
+    'prefer-arrow-callback': 'off',
   },
   overrides: [
     {
