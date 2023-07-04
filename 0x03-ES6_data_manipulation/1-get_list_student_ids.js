@@ -1,10 +1,9 @@
 // eslint-disable-next-line consistent-return
-export default function getListStudentIds() {
-  // eslint-disable-next-line no-undef
+export default function getListStudentIds(arr) {
   if (!Array.isArray(arr)) {
     return [];
   }
-  // eslint-disable-next-line no-undef
-  const ids = arr.map((student) => student.id);
-  return ids;
+  return arr.map(function (student) {
+    return student.id;
+  });
 }
