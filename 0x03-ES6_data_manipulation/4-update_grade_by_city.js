@@ -1,4 +1,4 @@
-export default function updateStudentGradeByCity(arr, newGrades, city) {
+export default function updateStudentGradeByCity(arr, city, newGrades) {
   // filter specified location, if location matches, look for new grade in the 'newGrade' array
   return arr
     .filter((student) => student.location === city)
