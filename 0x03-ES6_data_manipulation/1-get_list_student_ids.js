@@ -5,6 +5,6 @@ export default function getListStudentIds() {
     return [];
   }
   // eslint-disable-next-line no-undef
-  const ids = arr.map((student) => student.ids);
+  const ids = arr.map((student) => student.id);
   return ids;
 }
